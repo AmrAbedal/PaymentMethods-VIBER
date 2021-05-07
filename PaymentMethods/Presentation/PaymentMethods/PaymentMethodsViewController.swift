@@ -25,6 +25,10 @@ class PaymentMethodsViewController: UIViewController {
 
 }
 extension PaymentMethodsViewController : PaymentMethodsViewProtocol {
+    func errorInloadingMethods(errorMessage: String) {
+        
+    }
+    
     func reloadData() {
         
     }

@@ -9,7 +9,7 @@ import Foundation
 //MARK: - PaymentMethod
 struct PaymentMethod: Codable {
     let code: String
-    let  label:String
+    let label:String
     let method: String
     let grouping: String
     let registration: String
@@ -20,7 +20,6 @@ struct PaymentMethod: Codable {
 //MARK: - Links
 struct Links: Codable {
     let logo: String
-    let selfValue: String
     let lang: String
     let operation: String
     let validation: String

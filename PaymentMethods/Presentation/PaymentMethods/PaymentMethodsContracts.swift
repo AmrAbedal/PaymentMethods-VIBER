@@ -11,6 +11,8 @@ import Foundation
 
 protocol PaymentMethodsViewProtocol: AnyObject {
     func reloadData()
+    func errorInloadingMethods(errorMessage: String)
+
 }
 
 
