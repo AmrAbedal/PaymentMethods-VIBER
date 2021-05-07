@@ -6,22 +6,26 @@
 //
 
 import UIKit
-class PaymentMethodsCoordinator {
-    let navigationController: UINavigationController
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
-    }
-    func start() {
-        navigationController.pushViewController(PaymentMethodsViewController(), animated: true)
-    }
-}
+
 
 class PaymentMethodsViewController: UIViewController {
-
+    let presenter: PaymentMethodsPresenterProtocol
+    init(presenter: PaymentMethodsPresenterProtocol) {
+    self.presenter = presenter
+        super.init(nibName:"PaymentMethodsViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        presenter.viewDidLoad()
     }
 
+}
+extension PaymentMethodsViewController : PaymentMethodsViewProtocol {
+    func reloadData() {
+        
+    }
 }

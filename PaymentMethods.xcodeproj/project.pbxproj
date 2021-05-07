@@ -15,6 +15,15 @@
 		18147BE02645C13A006C713E /* PaymentMethodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147BDF2645C13A006C713E /* PaymentMethodsUITests.swift */; };
 		18147BF22645C187006C713E /* PaymentMethodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147BF02645C187006C713E /* PaymentMethodsViewController.swift */; };
 		18147BF32645C187006C713E /* PaymentMethodsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18147BF12645C187006C713E /* PaymentMethodsViewController.xib */; };
+		18147C0B2645C54F006C713E /* PaymentMethodsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147C0A2645C54F006C713E /* PaymentMethodsInteractor.swift */; };
+		18147C132645C5F6006C713E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147C122645C5F6006C713E /* NetworkManager.swift */; };
+		18147C192645CB91006C713E /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147C182645CB91006C713E /* PaymentMethod.swift */; };
+		18147C1E2645CBD8006C713E /* PayemtMethodsResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147C1D2645CBD8006C713E /* PayemtMethodsResponce.swift */; };
+		18147C232645CF7B006C713E /* AppURLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147C222645CF7B006C713E /* AppURLS.swift */; };
+		18147C422645D331006C713E /* PaymentMethodsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147C412645D331006C713E /* PaymentMethodsRouter.swift */; };
+		18147C472645D36A006C713E /* PaymentMethodsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147C462645D36A006C713E /* PaymentMethodsContracts.swift */; };
+		18147C4C2645D3B6006C713E /* PaymentMethodsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147C4B2645D3B6006C713E /* PaymentMethodsPresenter.swift */; };
+		18147C622645D5E6006C713E /* PaymentMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147C612645D5E6006C713E /* PaymentMethodViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		18147BE12645C13A006C713E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18147BF02645C187006C713E /* PaymentMethodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsViewController.swift; sourceTree = "<group>"; };
 		18147BF12645C187006C713E /* PaymentMethodsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodsViewController.xib; sourceTree = "<group>"; };
+		18147C0A2645C54F006C713E /* PaymentMethodsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsInteractor.swift; sourceTree = "<group>"; };
+		18147C122645C5F6006C713E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		18147C182645CB91006C713E /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		18147C1D2645CBD8006C713E /* PayemtMethodsResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayemtMethodsResponce.swift; sourceTree = "<group>"; };
+		18147C222645CF7B006C713E /* AppURLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppURLS.swift; sourceTree = "<group>"; };
+		18147C412645D331006C713E /* PaymentMethodsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsRouter.swift; sourceTree = "<group>"; };
+		18147C462645D36A006C713E /* PaymentMethodsContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsContracts.swift; sourceTree = "<group>"; };
+		18147C4B2645D3B6006C713E /* PaymentMethodsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsPresenter.swift; sourceTree = "<group>"; };
+		18147C612645D5E6006C713E /* PaymentMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,9 @@
 			children = (
 				18147BBD2645C139006C713E /* AppDelegate.swift */,
 				18147BBF2645C139006C713E /* SceneDelegate.swift */,
+				18147C222645CF7B006C713E /* AppURLS.swift */,
+				18147C172645CB74006C713E /* Entities */,
+				18147C092645C4EB006C713E /* Framework */,
 				18147C052645C3A2006C713E /* Presentation */,
 				18147BC62645C13A006C713E /* Assets.xcassets */,
 				18147BC82645C13A006C713E /* LaunchScreen.storyboard */,
@@ -130,7 +151,11 @@
 		18147BF72645C197006C713E /* PaymentMethods */ = {
 			isa = PBXGroup;
 			children = (
+				18147C0A2645C54F006C713E /* PaymentMethodsInteractor.swift */,
 				18147BF02645C187006C713E /* PaymentMethodsViewController.swift */,
+				18147C462645D36A006C713E /* PaymentMethodsContracts.swift */,
+				18147C412645D331006C713E /* PaymentMethodsRouter.swift */,
+				18147C4B2645D3B6006C713E /* PaymentMethodsPresenter.swift */,
 				18147BF12645C187006C713E /* PaymentMethodsViewController.xib */,
 			);
 			path = PaymentMethods;
@@ -142,6 +167,40 @@
 				18147BF72645C197006C713E /* PaymentMethods */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		18147C092645C4EB006C713E /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				18147C122645C5F6006C713E /* NetworkManager.swift */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		18147C172645CB74006C713E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				18147C602645D5CA006C713E /* ViewModelEntities */,
+				18147C542645D58D006C713E /* JsonEntities */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		18147C542645D58D006C713E /* JsonEntities */ = {
+			isa = PBXGroup;
+			children = (
+				18147C182645CB91006C713E /* PaymentMethod.swift */,
+				18147C1D2645CBD8006C713E /* PayemtMethodsResponce.swift */,
+			);
+			path = JsonEntities;
+			sourceTree = "<group>";
+		};
+		18147C602645D5CA006C713E /* ViewModelEntities */ = {
+			isa = PBXGroup;
+			children = (
+				18147C612645D5E6006C713E /* PaymentMethodViewModel.swift */,
+			);
+			path = ViewModelEntities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +333,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18147C1E2645CBD8006C713E /* PayemtMethodsResponce.swift in Sources */,
 				18147BBE2645C139006C713E /* AppDelegate.swift in Sources */,
+				18147C0B2645C54F006C713E /* PaymentMethodsInteractor.swift in Sources */,
+				18147C132645C5F6006C713E /* NetworkManager.swift in Sources */,
+				18147C4C2645D3B6006C713E /* PaymentMethodsPresenter.swift in Sources */,
+				18147C422645D331006C713E /* PaymentMethodsRouter.swift in Sources */,
+				18147C192645CB91006C713E /* PaymentMethod.swift in Sources */,
 				18147BF22645C187006C713E /* PaymentMethodsViewController.swift in Sources */,
+				18147C472645D36A006C713E /* PaymentMethodsContracts.swift in Sources */,
 				18147BC02645C139006C713E /* SceneDelegate.swift in Sources */,
+				18147C622645D5E6006C713E /* PaymentMethodViewModel.swift in Sources */,
+				18147C232645CF7B006C713E /* AppURLS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
