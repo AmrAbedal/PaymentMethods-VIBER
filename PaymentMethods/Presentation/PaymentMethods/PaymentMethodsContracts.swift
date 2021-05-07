@@ -17,7 +17,9 @@ protocol PaymentMethodsViewProtocol: AnyObject {
 
 
 protocol PaymentMethodsPresenterProtocol: AnyObject {
+    var methodsCount: Int { get }
     func viewDidLoad()
+    func getMethod(index: Int) -> PaymentMethodViewModel
     
 }
 
@@ -28,4 +30,8 @@ protocol PaymentMethodsInteractorProtocol: AnyObject {
 protocol PaymentMethodsInteractorOutputProtocol: AnyObject {
     func methodsLoadedSuccessfully(methods: [PaymentMethod])
     func errorInloadingMethods(error: AppError)
+}
+
+protocol PaymentMethodTableViewCellProtocol {
+    func configure(model: PaymentMethodViewModel)
 }

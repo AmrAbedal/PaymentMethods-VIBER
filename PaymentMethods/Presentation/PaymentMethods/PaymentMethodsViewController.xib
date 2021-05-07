@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentMethodsViewController" customModule="PaymentMethods" customModuleProvider="target">
             <connections>
+                <outlet property="methodsTableView" destination="mG1-ds-zLN" id="rge-6p-CVp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,12 +18,27 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mG1-ds-zLN">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="mG1-ds-zLN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CKa-Dq-9x3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mG1-ds-zLN" secondAttribute="trailing" id="dnD-Wz-2os"/>
+                <constraint firstItem="mG1-ds-zLN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="f4h-zH-sl5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mG1-ds-zLN" secondAttribute="bottom" id="rea-nf-Iaf"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="88"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

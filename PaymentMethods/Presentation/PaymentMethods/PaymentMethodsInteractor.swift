@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class PaymentMethodsInteractor: PaymentMethodsInteractorProtocol {
     weak var presenter: PaymentMethodsInteractorOutputProtocol?
     func loadPaymentMethds() {
