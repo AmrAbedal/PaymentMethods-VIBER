@@ -31,6 +31,7 @@ extension PaymentMethodTableViewCell: PaymentMethodTableViewCellProtocol {
     func configure(model: PaymentMethodViewModel) {
         methodIcon.image = UIImage()
         methodNameLabel.text = model.label
+        imageView?.downloaded(from: model.imageLink)
     }
-    
 }
+

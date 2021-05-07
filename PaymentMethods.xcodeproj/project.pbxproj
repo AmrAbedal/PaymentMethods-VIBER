@@ -26,6 +26,7 @@
 		18147C622645D5E6006C713E /* PaymentMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147C612645D5E6006C713E /* PaymentMethodViewModel.swift */; };
 		18147C682645DE54006C713E /* PaymentMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147C662645DE54006C713E /* PaymentMethodTableViewCell.swift */; };
 		18147C692645DE54006C713E /* PaymentMethodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18147C672645DE54006C713E /* PaymentMethodTableViewCell.xib */; };
+		18147C722645E3B4006C713E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147C712645E3B4006C713E /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		18147C612645D5E6006C713E /* PaymentMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewModel.swift; sourceTree = "<group>"; };
 		18147C662645DE54006C713E /* PaymentMethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodTableViewCell.swift; sourceTree = "<group>"; };
 		18147C672645DE54006C713E /* PaymentMethodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodTableViewCell.xib; sourceTree = "<group>"; };
+		18147C712645E3B4006C713E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				18147BBD2645C139006C713E /* AppDelegate.swift */,
 				18147BBF2645C139006C713E /* SceneDelegate.swift */,
 				18147C222645CF7B006C713E /* AppURLS.swift */,
+				18147C712645E3B4006C713E /* UIImageView+Extension.swift */,
 				18147C172645CB74006C713E /* Entities */,
 				18147C092645C4EB006C713E /* Framework */,
 				18147C052645C3A2006C713E /* Presentation */,
@@ -350,6 +353,7 @@
 			files = (
 				18147C1E2645CBD8006C713E /* PayemtMethodsResponce.swift in Sources */,
 				18147BBE2645C139006C713E /* AppDelegate.swift in Sources */,
+				18147C722645E3B4006C713E /* UIImageView+Extension.swift in Sources */,
 				18147C0B2645C54F006C713E /* PaymentMethodsInteractor.swift in Sources */,
 				18147C132645C5F6006C713E /* NetworkManager.swift in Sources */,
 				18147C4C2645D3B6006C713E /* PaymentMethodsPresenter.swift in Sources */,

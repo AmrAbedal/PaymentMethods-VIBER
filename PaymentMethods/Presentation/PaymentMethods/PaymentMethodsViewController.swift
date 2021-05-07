@@ -22,13 +22,20 @@ class PaymentMethodsViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Payments Methods"
+        setupNavigationBar()
         setupTableView()
         presenter.viewDidLoad()
     }
+    private func setupNavigationBar() {
+        navigationItem.title = "Payments Methods"
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+    }
     private func setupTableView() {
         methodsTableView.register(UINib.init(nibName: PaymentMethodTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: PaymentMethodTableViewCell.identifier)
-        methodsTableView.rowHeight = 70
+        methodsTableView.rowHeight = 100
         methodsTableView.estimatedRowHeight = UITableView.automaticDimension
         methodsTableView.dataSource = self
     }
@@ -47,6 +54,7 @@ extension PaymentMethodsViewController: UITableViewDataSource {
         return cell
     }
 }
+
 extension PaymentMethodsViewController : PaymentMethodsViewProtocol {
     func errorInloadingMethods(errorMessage: String) {
         debugPrint(errorMessage)
