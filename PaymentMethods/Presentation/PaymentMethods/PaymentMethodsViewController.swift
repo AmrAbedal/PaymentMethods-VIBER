@@ -7,11 +7,10 @@
 
 import UIKit
 
-
 class PaymentMethodsViewController: UIViewController {
     
     @IBOutlet weak var methodsTableView: UITableView!
-    let presenter: PaymentMethodsPresenterProtocol
+    var presenter: PaymentMethodsPresenterProtocol
     init(presenter: PaymentMethodsPresenterProtocol) {
     self.presenter = presenter
         super.init(nibName:"PaymentMethodsViewController", bundle: nil)

@@ -11,8 +11,8 @@ class PaymentMethodsPresenter  {
     private var methods: [PaymentMethodViewModel] = []
     weak var view: PaymentMethodsViewProtocol?
     private let interactor: PaymentMethodsInteractorProtocol
-    let wirframe: PaymentMethodsCoordinator
-    init(interactor: PaymentMethodsInteractorProtocol,  wirframe: PaymentMethodsCoordinator) {
+    let wirframe: PaymentMethodsCoordinatorProtocol
+    init(interactor: PaymentMethodsInteractorProtocol,  wirframe: PaymentMethodsCoordinatorProtocol) {
         self.interactor = interactor
         self.wirframe = wirframe
     }

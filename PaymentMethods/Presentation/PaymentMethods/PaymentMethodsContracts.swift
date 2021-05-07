@@ -10,6 +10,7 @@ import Foundation
 
 
 protocol PaymentMethodsViewProtocol: AnyObject {
+    var presenter: PaymentMethodsPresenterProtocol {get set}
     func reloadData()
     func errorInloadingMethods(errorMessage: String)
 
@@ -24,6 +25,7 @@ protocol PaymentMethodsPresenterProtocol: AnyObject {
 }
 
 protocol PaymentMethodsInteractorProtocol: AnyObject {
+    var presenter: PaymentMethodsInteractorOutputProtocol? {get set}
     func loadPaymentMethds()
 }
 
@@ -34,4 +36,8 @@ protocol PaymentMethodsInteractorOutputProtocol: AnyObject {
 
 protocol PaymentMethodTableViewCellProtocol {
     func configure(model: PaymentMethodViewModel)
+}
+
+protocol PaymentMethodsCoordinatorProtocol {
+    
 }

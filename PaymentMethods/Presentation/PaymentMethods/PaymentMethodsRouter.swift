@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 
-class PaymentMethodsCoordinator {
+
+class PaymentMethodsCoordinator: PaymentMethodsCoordinatorProtocol {
     let navigationController: UINavigationController
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
