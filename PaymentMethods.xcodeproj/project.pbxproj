@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		18147BBE2645C139006C713E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147BBD2645C139006C713E /* AppDelegate.swift */; };
 		18147BC02645C139006C713E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147BBF2645C139006C713E /* SceneDelegate.swift */; };
-		18147BC22645C139006C713E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147BC12645C139006C713E /* ViewController.swift */; };
-		18147BC52645C139006C713E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18147BC32645C139006C713E /* Main.storyboard */; };
 		18147BC72645C13A006C713E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18147BC62645C13A006C713E /* Assets.xcassets */; };
 		18147BCA2645C13A006C713E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18147BC82645C13A006C713E /* LaunchScreen.storyboard */; };
 		18147BD52645C13A006C713E /* PaymentMethodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147BD42645C13A006C713E /* PaymentMethodsTests.swift */; };
 		18147BE02645C13A006C713E /* PaymentMethodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147BDF2645C13A006C713E /* PaymentMethodsUITests.swift */; };
+		18147BF22645C187006C713E /* PaymentMethodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18147BF02645C187006C713E /* PaymentMethodsViewController.swift */; };
+		18147BF32645C187006C713E /* PaymentMethodsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18147BF12645C187006C713E /* PaymentMethodsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		18147BBA2645C139006C713E /* PaymentMethods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentMethods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18147BBD2645C139006C713E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18147BBF2645C139006C713E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18147BC12645C139006C713E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18147BC42645C139006C713E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18147BC62645C13A006C713E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18147BC92645C13A006C713E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18147BCB2645C13A006C713E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		18147BDB2645C13A006C713E /* PaymentMethodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentMethodsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18147BDF2645C13A006C713E /* PaymentMethodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsUITests.swift; sourceTree = "<group>"; };
 		18147BE12645C13A006C713E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18147BF02645C187006C713E /* PaymentMethodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsViewController.swift; sourceTree = "<group>"; };
+		18147BF12645C187006C713E /* PaymentMethodsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,7 @@
 			children = (
 				18147BBD2645C139006C713E /* AppDelegate.swift */,
 				18147BBF2645C139006C713E /* SceneDelegate.swift */,
-				18147BC12645C139006C713E /* ViewController.swift */,
-				18147BC32645C139006C713E /* Main.storyboard */,
+				18147C052645C3A2006C713E /* Presentation */,
 				18147BC62645C13A006C713E /* Assets.xcassets */,
 				18147BC82645C13A006C713E /* LaunchScreen.storyboard */,
 				18147BCB2645C13A006C713E /* Info.plist */,
@@ -126,6 +125,23 @@
 				18147BE12645C13A006C713E /* Info.plist */,
 			);
 			path = PaymentMethodsUITests;
+			sourceTree = "<group>";
+		};
+		18147BF72645C197006C713E /* PaymentMethods */ = {
+			isa = PBXGroup;
+			children = (
+				18147BF02645C187006C713E /* PaymentMethodsViewController.swift */,
+				18147BF12645C187006C713E /* PaymentMethodsViewController.xib */,
+			);
+			path = PaymentMethods;
+			sourceTree = "<group>";
+		};
+		18147C052645C3A2006C713E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				18147BF72645C197006C713E /* PaymentMethods */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18147BF32645C187006C713E /* PaymentMethodsViewController.xib in Resources */,
 				18147BCA2645C13A006C713E /* LaunchScreen.storyboard in Resources */,
 				18147BC72645C13A006C713E /* Assets.xcassets in Resources */,
-				18147BC52645C139006C713E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18147BC22645C139006C713E /* ViewController.swift in Sources */,
 				18147BBE2645C139006C713E /* AppDelegate.swift in Sources */,
+				18147BF22645C187006C713E /* PaymentMethodsViewController.swift in Sources */,
 				18147BC02645C139006C713E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +312,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		18147BC32645C139006C713E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18147BC42645C139006C713E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18147BC82645C13A006C713E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
